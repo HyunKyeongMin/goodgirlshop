@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#header {
+		background-color: #FADAD8;
+		height: 70px;
+	}
+	
+	#member {
+		height: 70px;
+		text-align: center;
+	}
+	
+	#member_n {
+		line-height: 65px;
+		font-size: 20px;
+	}
+	
+	table {
+		border: 1px solid red;
+		width: 100%;
+		border: 0;
+		border-spacing: 0px;
+	}
+	
+	tr {
+		display: table-row;
+		vertical-align: inherit;
+		border-color: inherit;
+	}
+	
+	th, td {
+		border: 0px;
+	 	margin: 0 4px 0 0;
+	}
+	
+	#id_check {
+		line-height: 22px;
+	}
+	
+	.member_box{
+		height: 22px;
+		padding: 0px 30px 0px 30px;
+	}
+	
+	th {
+		text-align: right;
+	}
+	
+	hint {
+	 	padding: 40px 30px 30px 40px;
+	 	
+	}
+	
+
+
+
+
+</style>
+</head>
+<body>
+	<div id = "header">
+	</div>
+	
+	<div id="member">
+		<span id="member_n"><strong>회원가입</strong></span>
+	</div>
+	<hr>
+	
+	<div class="boardWrite">
+	 	<table>
+			<tr>
+				<th>
+					아이디
+					<img src="img/ico_required.gif">
+				</th>
+				<td>
+				<input class="member_box" type="text" class="input_login" size="15" maxlength="15" placeholder="ID">
+				<a href="#" role="button">
+					<img id= "id_check" src="img/btn_overlap_id.gif" alt="아이디 중복 확인">
+				</a>
+				 (영문소문자/숫자, 4~16자)
+				</td>
+			</tr>
+			<tr>
+				<th>
+					비밀번호
+					<img src="img/ico_required.gif">
+				</th>
+				<td>
+				<input class="member_box" type="password" class="input_pw" size="15" maxlength="15" placeholder="PW">
+					(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)
+				</td>
+			</tr>
+			<tr>
+				<th>
+					비밀번호 확인
+					<img src="img/ico_required.gif">
+				</th>
+				<td>
+				<input class="member_box" type="password" class="input_pw_check" size="15" maxlength="15" placeholder="PW2">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					비밀번호 확인 질문
+					<img src="img/ico_required.gif">
+				</th>
+				<td>
+				<select id="hint" name="hint">
+					<option value="hint_01">자신의 보물 제1호는?</option>
+					<option value="hint_02">기억에 남는 추억의 장소는?</option>
+					<option value="hint_03">가장 좋아하는 음식</option>
+					<option value="hint_04">가장 기억에 남는 책이름</option>
+					<option value="hint_05">자신의 보물 제1호는?</option>
+				</select>
+				</td>
+			</tr>
+	 	</table>
+	</div>
+	<hr>
+
+
+</body>
+</html>
