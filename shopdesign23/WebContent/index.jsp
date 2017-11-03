@@ -106,7 +106,7 @@
 <div id = "header_3"> </div>
 <br>
 <div class="item_list">
-
+	열심히 하세요 화이팅!
 	<h3>Best Item</h3>
 	<hr>
 	<C:forEach items="${bestlist}" var="bPDto">
